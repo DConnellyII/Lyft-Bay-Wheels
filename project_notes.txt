@@ -14,20 +14,41 @@
 
 * When I went to push the cleaned CSV to github, I received an error for the file size being too big.
 
-* I decided to figure out what I could eliminate from the data that might not be useful and found that the "member_birth_year" column had a lot of misinformation. I then decided that everything before 1920 would be stripped from the data since that would make the riders age be over 100 years old in 2019.
+* I decided to figure out what I could eliminate from the data that might not be useful and found that the "member_birth_year" column had a lot of misinformation. I then decided that everything before 1920 would be stripped from the data since that would make the riders age be over 80 years old in 2019.
 
-* I also took a look at "member_gender" and saw that outside of "Male" and "Female" there was "Other" option. I opted to get rid of the "Other" option during my dashboard analysis.
+* I also took a look at "member_gender" and saw that outside of "Male" and "Female" there was "Other" option. I opted to get rid of the "Other" option for my dashboard analysis.
 
 
 * No 1, 2, 12, 32, 38, 40, 45, 48, 57, 65, 68, 69, 82, 83, 94, 103, 111, 117, 128, 135, 143, 161, 165, 184, 185, 199, 208, 260, 261, 264, 293, 302, 319, 320, 322, 328, 329, 330, 331, 332, 333, 334, 335, 346, 347, 348, 353, 354, 366, 367, 374, 379, 382, 408, 414 station id
 
 
-* check on 064 (not shown on map) - 5th St at Brannan St. 
-* check on 070 (not shown on map) - Central Ave at Fell St
-* check on 071 (not shown on map) - Broderick St at Oak St
-* check on 086 (not shown on map) - Market St at Dolores St
-* check on 100 (not shown on map) - Bryant St at 15th St
-* check on 102 (not shown on map) - Irwin St at 8th St
+* Decided to focus on San Francisco. It contains roughly 2/3rd of the data meaning that area has the most activity. May focus on Oakland, Berkeley and Emeryville seperate from San Jose on another visualization.
+
+SAN FRANCISCO
+* check on 033 (not shown on map) - Golden Gate Ave at Hyde St - Permanently closed. Construction going on in the area.
+
+* check on 064 (not shown on map) - 5th St at Brannan St. - Permanently closed. Looks like it became a bike lane.
+
+* check on 070 (not shown on map) - Central Ave at Fell St - Permanently closed. Looks liek it became car parking
+
+* check on 100 (not shown on map) - Bryant St at 15th St 37.767129, -122.410736. Doesn't appear on Lyft map, but can be found on google maps although it isn't geotagged. Not sure if it's still in service.
+
+* check on 102 (not shown on map) - Irwin St at 8th St - Permanently closed. Looks as if it couldv'e been a safety concern or it wasn't in a good area.
+
+* check on 136 (not shown on map) - 23rd St at San Bruno Ave - Not shown on google maps or Lyft map. Looks like it could be a bus stop or street parking now.
+
+* check on 344 (not shown on map) - 16th St Depot 37.767131, -122.390800 (16th St at 4th St) Possibly. Not shown on google maps or Lyft map
+
+* check on 349 (not shown on map) - Howard St at Mary St - Permanently closed. Became bike lane and car parking.
+
+* check on 360 (not shown on map) - Newhall St at 3rd St ---> Jerrold Ave at 3rd St 37.738978, -122.389565
+
+* check on 419 (not shown on map) - Fern St & Polk St. Became bike lane or metered parking
+
+* check on 420 (not shown on map) - SF Test Station - Not found on either map
+
+
+OAKLAND
 * check on 167 (not shown on map) - College Ave at Harwood Ave 37.848217, -122.252018 ---> 62nd St at Claremont Ave 37.849447, -122.252512
 
 * check on 174 (not shown on map) - Shattuck Ave at 51st St 37.837995, -122.264015 (Possibly shut down to downsize after pandemic)
@@ -36,19 +57,20 @@
 
 * check on 214 (not shown on map) - Market St at Brockhurst St 37.823489, -122.275837 ---> West St at Brockhurst St 37.822729, -122.273000 (Possibly because of reconstruction in the area. Looked to be a less trafficked area. May be safer for bikers to get and dock bikes)
 
-* check on 214 (not shown on map) - 
-* check on 229 (not shown on map) - Foothill Blvd at 42nd Ave
-* check on 282 (not shown on map) - Market St at Park St
-* check on 303 (not shown on map) - San Pedro St at Hedding St
-* check on 311 (not shown on map) - Paseo De San Antonio at 2nd St
-* check on 419 (not shown on map) - Fern St & Polk St
-* check on 420 (not shown on map) - SF Test Station
+* check on 224 (not shown on map) - 21st Ave at International Blvd
 
+* check on 229 (not shown on map) - Foothill Blvd at 42nd Ave
+
+
+SAN JOSE
+* check on 282 (not shown on map) - Market St at Park St 37.332459, -121.890411. Looks like it became metered parking
 
  
 *  Is 272 station name "Woolsey St at Sacramento St1" different from 385 station name "Woolsey St at Sacramento St"?
 * update 277 station name from "Morrison Ave at Julian St" to "W Julian St at N Morrison St". Although Morrison Ave is correct, it cannot be looked up this way currently in 2023.
-* update 277 station name from "Empire St at 7th St" to "7th St at Empire St"
+* update 378 station name from "Empire St at 7th St" to "7th St at Empire St"
+* update 321 station name from "5th St at Folsom" to "Folsom St at 5th St"
+* update 323 station name from "Broadway at Kearny" to "Broadway at Kearny St"
 
 station_id 316 contains 2 different addresses. In May, it moved from "San Salvador at 1st St" to a block away at "1st St at San Carlos Ave"
 

@@ -15,11 +15,11 @@
 
 <a name="about"></a>
 ## About The Project: :thinking:
-Bay Wheels is a bike-sharing initiative backed by the rideshare provider Lyft. Many populated cities have turned to alternate sources of transportation to help the general public who may not have the means of acquiring their own. It could also be a viable solution to local residents who don't live far away from destinations they frequent. I wanted to work with this data to see how Bay Wheels was utilized before the pandemic.
+Bay Wheels is a bike-sharing initiative backed by the rideshare provider Lyft in California. Many highly populated areas have turned to alternate sources of transportation to help the general public who may not have the means of acquiring their own. It could also be a viable solution to local residents who don't live far away from destinations they frequent. I wanted to work with this data because I was interested in seeing how Bay Wheels was being utilized the year before the pandemic. Although there have already been changes to several of the bike station locations as of 2023, some being permanently closed, this type of analysis could help city officials looking to publicize and improve the program.
 
 <a name="source"></a>
 ## Data Source: :books:
-
+This is an anonymized trips dataset of Lyft bike sharing system (Bay Wheels), in the Bay Area of California from January 2019 to May 2019. This data was created with information obtained from the [Lyft bike sharing site](https://www.lyft.com/bikes/bay-wheels). I used all 5 of the CSV's for my analysis.
 
 - [Kaggle: Bay Area Bike Sharing Trips](https://www.kaggle.com/datasets/jolasa/bay-area-bike-sharing-trips)
 
@@ -48,6 +48,15 @@ The data was provided in 5 separate CSV's. I checked the shape of the original d
 ![ETL02](images/etl_02.png)
 ![ETL03](images/etl_03.png)
 ![ETL04](images/etl_04.png)
+
+From there, I started researching the Bay Wheels website to try to get location information for each of the stations. Initially, I was working within the CSV file in Excel adding the new information, but realized that it would be time consuming and present the opportunity for inaccuracies if I continued this way. I also realized that I could create a lot of inaccuracies doing it this way.
+
+
+I uploaded my cleaned data into PostgreSQL to start updating by adding more data into my dataset. I wanted to add the city names, the state and both latitudes and longitudes for each start and end station. The more I worked with my queries, the more advanced they became to save time and increase accuracy. 
+
+
+
+Originally, I was working with all of the data from each city (Berkeley, Emeryville, Oakland, San Francisco, San Jose).
 
 <a name="eda"></a>
 ## Exploratory Data Analysis: :mag::bar_chart:

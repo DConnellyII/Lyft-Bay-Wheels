@@ -42,9 +42,14 @@ This is an anonymized trips dataset of Lyft bike sharing system (Bay Wheels), in
 
 <a name="etl"></a>
 ## Extract, Transform, Load: :magic_wand:
-The data was provided in 5 separate CSV's. I checked the shape of the original data, renamed some data for accuracy and verified and changed a few datatypes. We also checked for any null values in the dataset and dropped them. Once our data checked out, I exported the merged data into a single CSV.
-
+The data was provided in 5 separate CSV's so I started by combining them all into 1 CSV.
 ![ETL01](images/etl_images/etl_01.png)
+
+I then checked the shape of the original data to see how many rows and columns I would be working with. From there, I checked the name of the columns because I needed to rename some data for accuracy.
 ![ETL02](images/etl_images/etl_02.png)
+
+I also checked for any null values in the dataset to determine if it was worth having them or if they could be dropped to improve the analysis. There were 745 start and end stations that were missing. I assume these may be bikes that were used but never docked so it didn't allow for any information to be recorded. There were also 49,376 birth years and 49,370 genders that were not recorded. This could be that the users didn't want to record any personal information of themselves. Being that it was around 5% of the data, I decided to dropped them.
 ![ETL03](images/etl_images/etl_03.png)
+
+Then, I verified and changed a few datatypes and once the data checked out, I exported the merged data into a single CSV.
 ![ETL04](images/etl_images/etl_04.png)

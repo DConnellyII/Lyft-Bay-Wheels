@@ -39,3 +39,12 @@ This is an anonymized trips dataset of Lyft bike sharing system (Bay Wheels), in
 04. Research and add cities and state into the data
 05. Research and add latitude and longitude coordinates for start and end stations into the data
 06. Visualize dashboard in Tableau
+
+<a name="etl"></a>
+## Extract, Transform, Load: :magic_wand:
+The data was provided in 5 separate CSV's. I checked the shape of the original data, renamed some data for accuracy and verified and changed a few datatypes. We also checked for any null values in the dataset and dropped them. Once our data checked out, I exported the merged data into a single CSV.
+
+![ETL01](images/etl_01.png)
+![ETL02](images/etl_02.png)
+![ETL03](images/etl_03.png)
+![ETL04](images/etl_04.png)

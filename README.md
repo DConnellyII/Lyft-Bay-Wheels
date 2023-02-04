@@ -54,12 +54,13 @@ Then, I [verified and changed a few datatypes](https://github.com/DConnellyII/ly
 
 ![ETL08](images/etl_images/etl_08.png)
 
-From there, I started researching the [Bay Wheels map](https://account.baywheels.com/map) to try and get location information for each of the stations. I wanted to add the city names, the state and both latitudes and longitudes for each start and end station.
+After that, I went into my CSV to rearrange my columns to have better clarity of my information. I also added [new columns](txt/bay_wheels_summary_format.txt) to include city, state, latitude and longitude information for the start and end stations to include them on a static map in Tableau.
 
+Initially, I started researching the [Bay Wheels map](https://account.baywheels.com/map) to try and get location information for each of the stations while working within the cleaned CSV file in Excel to add the new data. I soon realized that it would be time consuming because of the amount of information I needed to include and the Lyft website had several hang ups during my research. It also could present the opportunity for hidden [inaccuracies](https://github.com/DConnellyII/lyft_bay_wheels/blob/main/images/sql_images/sql_01.png) if I continued this way.
 
-Initially, I was working within the CSV file in Excel adding the latitudes and longitudes, but realized that it would be time consuming because of the amount of information I needed to include and the Lyft website had several hang ups while searching. It also could present the opportunity for inaccuracies (which happened) if I continued this way.
+I decided to change a few things to hopefully alleviate those issues. I began looking up the start and end stations on Google Maps and [updating](images/sql_images/sql_03.png) my data with SQL. Google Maps provided me with correct city information as well as the opportunity to collect the latitude and longitude. I then updated the information through SQL.
 
-I decided to upload my data into PostgreSQL to add my data into my dataset.  The more I worked with my queries, the more advanced they became to save time and increase accuracy. 
+![SQL04](images/sql_images/sql_04.png)
 
 
 

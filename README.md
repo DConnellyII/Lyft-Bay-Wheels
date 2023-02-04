@@ -43,6 +43,7 @@ This is an anonymized trips dataset of Lyft bike sharing system (Bay Wheels), in
 <a name="etl"></a>
 ## Extract, Transform, Load: :magic_wand:
 The data was provided in 5 separate CSV's so I started by combining them all into 1 CSV.
+
 ![ETL01](images/etl_images/etl_01.png)
 
 I then [checked the shape of the original date](https://github.com/DConnellyII/lyft_bay_wheels/blob/main/images/etl_images/etl_02.png) to see how many rows and columns I would be working with. From there, I [checked the name of the columns](https://github.com/DConnellyII/lyft_bay_wheels/blob/main/images/etl_images/etl_03.png) because I needed to [rename some data](https://github.com/DConnellyII/lyft_bay_wheels/blob/main/images/etl_images/etl_04.png) for accuracy.
@@ -50,6 +51,7 @@ I then [checked the shape of the original date](https://github.com/DConnellyII/l
 I also [checked for any null values](https://github.com/DConnellyII/lyft_bay_wheels/blob/main/images/etl_images/etl_05.png) in the dataset to determine if it was worth having them or if they could be dropped to improve the analysis. There were 745 start and end stations that were missing. I assume these may be bikes that were used but never docked so it didn't allow for any information to be recorded. There were also 49,376 birth years and 49,370 genders that were not recorded. This could be that the users didn't want to record any personal information of themselves. Being that it was around 5% of the data, I decided to [drop the null data](https://github.com/DConnellyII/lyft_bay_wheels/blob/main/images/etl_images/etl_06.png).
 
 Then, I [verified and changed a few datatypes](https://github.com/DConnellyII/lyft_bay_wheels/blob/main/images/etl_images/etl_07.png) and once the data checked out, I exported the merged data into a single CSV.
+
 ![ETL08](images/etl_images/etl_08.png)
 
 From there, I started researching the [Bay Wheels map](https://account.baywheels.com/map) to try and get location information for each of the stations. I wanted to add the city names, the state and both latitudes and longitudes for each start and end station.

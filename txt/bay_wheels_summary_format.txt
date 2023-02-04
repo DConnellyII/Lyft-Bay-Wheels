@@ -1,0 +1,31 @@
+CURRENT DATA FORMAT:
+bike_id
+month
+trip_duration_sec
+start_station_id
+start_station_name
+start_station_city
+start_lat
+start_long
+end_station_id
+end_station_name
+end_station_city
+end_lat
+end_long
+state
+user_type
+member_gender
+member_birth_year
+
+
+DATA FORMAT PREVIOUSLY:
+bike_id
+month
+trip_duration_sec
+start_station_id
+start_station_name
+end_station_id
+end_station_name
+user_type
+member_gender
+member_birth_year

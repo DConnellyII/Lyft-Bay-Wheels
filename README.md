@@ -32,7 +32,8 @@ This project was initiated with an interest in analyzing the usage of Bay Wheels
 03. Load data into PostgreSQL
 04. Research and add cities and state into the data
 05. Research and add latitude and longitude coordinates for start and end stations into the data
-06. Visualize dashboard in Tableau
+06. Confirm usuable data
+07. Visualize dashboard in Tableau
 
 <a name="etl"></a>
 ## Extract, Transform, Load:

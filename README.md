@@ -13,7 +13,9 @@
 
 <a name="about"></a>
 ## About The Project:
-Bay Wheels is a bike-sharing program, which is supported by Lyft, a leading rideshare provider, in California. With the aim of providing alternative modes of transportation for the general public, particularly in densely populated areas, Bay Wheels serves as a practical solution for those who lack the means of personal transportation. Additionally, the program addresses the needs of local residents who reside in close proximity to their frequent destinations. This project was initiated with an interest in analyzing the usage of Bay Wheels prior to the outbreak of the pandemic. Although the program has undergone changes in terms of station locations, with some being discontinued permanently, this analysis can offer insights that could assist city officials in enhancing the efficiency and visibility of the program.
+Bay Wheels is a bike-sharing program, which is supported by Lyft, a leading rideshare provider, in California. With the aim of providing alternative modes of transportation for the general public, particularly in densely populated areas, Bay Wheels serves as a practical solution for those who lack the means of personal transportation. Additionally, the program addresses the needs of local residents who reside in close proximity to their frequent destinations.
+
+This project was initiated with an interest in analyzing the usage of Bay Wheels prior to the outbreak of the pandemic. Although the program has undergone changes in terms of station locations, with some being discontinued permanently, this analysis can offer insights that could assist city officials in enhancing the efficiency and visibility of the program.
 
 <a name="tech"></a>
 ## Technologies:

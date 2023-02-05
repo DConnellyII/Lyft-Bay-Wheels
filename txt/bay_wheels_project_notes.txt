@@ -1,85 +1,22 @@
-# lyft_bay_wheels
-* Anonymized bike trip data from Jan 2019 to May 2019 
-
-# Content
-* This dataset contains anonymized trips data of Lyft bike sharing system (Bay Wheels), in the Bay Area from January 2019 to May 2019.
-
-# Acknowledgements
-* This data was created with information obtained from Lift Bike Sharing Site https://www.lyft.com/bikes/bay-wheels
-
-
-I will build a set of data reports to provide insight into the program's utilization. The reports could be used by the city officials looking to publicize and improve the service.
-
-I plan to try to tackle several questions involving the data including:
-
-* What are the top 10 stations in the city for starting a journey? (Based on data, why do you hypothesize these are the top locations?)
-
-* What are the top 10 stations in the city for ending a journey? (Based on data, why?)
-
-* What are the bottom 10 stations in the city for starting a journey? (Based on data, why?)
-
-* What are the bottom 10 stations in the city for ending a journey (Based on data, why?)
-
-* How does the average trip duration change by user type, gender and birth year?
-
-* How many trips have been recorded in total by gender and user type? 
-
-* By what percentage difference is the short-term customers and annual subscribers by gender?
-
-* Which bikes (by ID) are most likely due for repair or inspection in the timespan?
-
-* What is the peak month in which bikes are used? (Using line graphs and heatmaps)
-
-Next, I will:
-
-* Use visualizations to design a dashboard for my findings.
-
-* The dashboards will be accompanied with an analysis explaining my findings.
-
-* Include a static map that plots all bike stations starting and ending locations. The maps I choose will also be accompanied by a write-up unveiling any trends that were noticed during my analysis.
-
-And after this is all completed, I will:
-
-* Create a Tableau story that brings together the visualizations, maps and dashboards making it professional, logical and visually appealing.
-
-* Write a completed README
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * Data was broken down into 5 separate CSV files for the months of January through May.
 
 * I created a Jupyter Notebook file to combine all of my CSV's into a dataframe using Pandas to export into one CSV file.
 
 * After reviewing the datatypes of my columns, I realized that a few of them were floats when they should have been ints. I added that into the code.
 
-* I went into the cleaned data CSV and rearranged my columns to have better clarity.
-
 * While doing an initial scan of the data, I noticed that February was spelled incorrectly, so I included a script to correct it.
-
-* I also noticed that I didnt have any data to represent where this would physically be. I went through the map on the Lyft website to eventually include the starting and ending location (city/state) to be able to use in Tableau.
-
-* To more easily update my data, I imported the CSV file into PostgreSQL. This allowed me to update the start and ending locations more efficiently. I also used SQL to make sure the names of the stations matched what was reflected on the Lyft dashboard using CRUD.
 
 * When I went to push the cleaned CSV to github, I received an error for the file size being too big. I zipped the files.
 
+* I went into the cleaned data CSV and rearranged my columns to have better clarity.
+
+* I also noticed that I didnt have any data to represent where this would physically be. I went through the map on the Lyft website to eventually include the starting and ending location (city/state) to be able to use in Tableau.
+
+* To more easily update my data, I imported the CSV file into PostgreSQL. This allowed me to update the start and ending locations more efficiently. I also used SQL to make sure the names of the stations matched what was reflected on the Lyft website.
+
 * I decided to figure out what I could eliminate from the data that might not be useful and found that the "member_birth_year" column had some misinformation. I then decided that everything before 1939 would be stripped from the data since that would make the riders age be over 80 years old in 2019.
 
-* I also took a look at "member_gender" and saw that outside of "Male" and "Female" there was "Other" option. I opted to get rid of the "Other" option for my analysis.
+* I also took a look at "member_gender" and saw that outside of "Male" and "Female" there was an "Other" option. I opted to get rid of the "Other" option for my analysis.
 
 * Decided to focus on San Francisco. It contains roughly 2/3rd of the data meaning that area has the most activity. May focus on Oakland, Berkeley and Emeryville seperate from San Jose on another visualization.
 

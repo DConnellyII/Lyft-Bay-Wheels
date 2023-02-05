@@ -2,7 +2,7 @@
 
 ![Bay Wheels Logo](images/bay_wheels.jpg)
 
-## Table of Contents: :house_with_garden:
+## Table of Contents:
 01. [About The Project](#about) 
 02. [Technologies](#tech)
 03. [Approach](#approach)
@@ -12,11 +12,11 @@
 07. [Data Source](#source)
 
 <a name="about"></a>
-## About The Project: :thinking:
+## About The Project:
 Bay Wheels is a bike-sharing program, which is supported by Lyft, a leading rideshare provider, in California. With the aim of providing alternative modes of transportation for the general public, particularly in densely populated areas, Bay Wheels serves as a practical solution for those who lack the means of personal transportation. Additionally, the program addresses the needs of local residents who reside in close proximity to their frequent destinations. This project was initiated with an interest in analyzing the usage of Bay Wheels prior to the outbreak of the pandemic. Although the program has undergone changes in terms of station locations, with some being discontinued permanently, this analysis can offer insights that could assist city officials in enhancing the efficiency and visibility of the program.
 
 <a name="tech"></a>
-## Technologies: :building_construction::hammer_and_wrench:
+## Technologies:
 - Jupyter Notebook
 - Python
 - Pandas
@@ -24,7 +24,7 @@ Bay Wheels is a bike-sharing program, which is supported by Lyft, a leading ride
 - Tableau
 
 <a name="approach"></a>
-## Approach: :computer:
+## Approach:
 01. Identify data source
 02. Collect and clean Bay Wheels data
 03. Load data into PostgreSQL
@@ -33,7 +33,7 @@ Bay Wheels is a bike-sharing program, which is supported by Lyft, a leading ride
 06. Visualize dashboard in Tableau
 
 <a name="etl"></a>
-## Extract, Transform, Load: :magic_wand:
+## Extract, Transform, Load:
 The data was provided in 5 separate CSV's so I started by combining them all into 1 CSV.
 
 ![ETL01](images/etl_images/etl_01.png)
@@ -57,21 +57,21 @@ In order to ensure the accuracy and reliability of the analysis, I conducted a t
 Initially, the analysis encompassed data from multiple cities, including Berkeley, Emeryville, Oakland, San Francisco, and San Jose. However, to facilitate a more focused examination, I narrowed the scope of the analysis to concentrate solely on [San Francisco](images/lyft_images/san_francisco_bay_wheels.png), as it accounted for the majority of trips taken through the platform. The data from the other cities was [removed](images/sql_images/sql_04.png), and the remaining data was exported to a final CSV file for import into Tableau.
 
 <a name="dashboard"></a>
-## The Dashboard: :electron:
+## The Dashboard:
 ![Tableau01](images/tableau_images/tableau_01.png)
 
 [Lyft Bay Wheels - San Francisco (2019)](https://public.tableau.com/app/profile/dconnellyii/viz/san_francisco_lyft_bay_wheels_2019/SanFranciscoBayWheels2019
 
 )
 <a name="forward"></a>
-## Going Forward: :bulb:
+## Going Forward:
 - Do an analysis on the East Bay area (Berkeley, Emeryville, Oakland) and San Jose.
 - Look into trying to find a way to get daily and/or time data to see what days and time of day the bikes were used.
 - Look into finding data for the second half of the year and create a yearly dataset for analysis.
 - Find more recent data and see how any of the trip data has changed after the pandemic.
 
 <a name="source"></a>
-## Data Source: :books:
+## Data Source:
 This dataset comprises anonymized trip records of the Lyft bike-sharing system, Bay Wheels, in the Bay Area of California, covering the period from January to May 2019. The data was derived from publicly available information on the [Lyft bike-sharing platform](https://www.lyft.com/bikes/bay-wheels). I used all 5 of the CSV's for my analysis.
 
 - [Kaggle: Bay Area Bike Sharing Trips](https://www.kaggle.com/datasets/jolasa/bay-area-bike-sharing-trips)

@@ -60,9 +60,7 @@ Initially, the analysis encompassed data from multiple cities, including Berkele
 ## The Dashboard:
 ![Tableau01](images/tableau_images/tableau_01.png)
 
-[Lyft Bay Wheels - San Francisco (2019)](https://public.tableau.com/app/profile/dconnellyii/viz/san_francisco_lyft_bay_wheels_2019/SanFranciscoBayWheels2019
-
-)
+[Lyft Bay Wheels - San Francisco (2019)](https://public.tableau.com/app/profile/dconnellyii/viz/san_francisco_lyft_bay_wheels_2019/SanFranciscoBayWheels2019)
 <a name="forward"></a>
 ## Going Forward:
 - Do an analysis on the East Bay area (Berkeley, Emeryville, Oakland) and San Jose.

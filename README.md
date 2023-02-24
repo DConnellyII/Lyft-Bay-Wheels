@@ -57,7 +57,7 @@ To address the limitations of the initial approach, I decided to adopt an altern
 
 In order to ensure the accuracy and reliability of the analysis, I conducted a thorough examination of the member birth year and gender data. During this process, I identified inaccuracies in the birth year information and decided to remove this data to prevent potential bias in the analysis. To further refine the focus of the analysis, I limited the birth year data to the range of [1939 to 2001](images/sql_images/sql_05.png), ensuring that all members included in the analysis were between the ages of 18 and 80 during the period of analysis.
 
-Initially, the analysis encompassed data from multiple cities, including Berkeley, Emeryville, Oakland, San Francisco, and San Jose. However, to facilitate a more focused examination, I narrowed the scope of the analysis to concentrate solely on [San Francisco](images/lyft_images/san_francisco_bay_wheels.png), as it accounted for the majority of trips taken through the platform. The data from the other cities was [removed](images/sql_images/sql_04.png), and the remaining data was exported to a final CSV file for import into Tableau.
+Initially, the analysis encompassed data from multiple cities, including Berkeley, Emeryville, Oakland, San Francisco, and San Jose. However, to facilitate a more focused examination, I narrowed the scope of the analysis to concentrate solely on [San Francisco](images/lyft_images/san_francisco_bay_wheels.png), as it accounted for the majority of trips taken through the platform. The data from the other cities was [removed](images/sql_images/sql_06.png), and the remaining data was exported to a final CSV file for import into Tableau.
 
 <a name="dashboard"></a>
 ## The Dashboard:
